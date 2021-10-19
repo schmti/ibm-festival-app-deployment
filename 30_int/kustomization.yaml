@@ -6,7 +6,7 @@ bases:
 commonLabels:
   app: ibm-festival-java-sample
   app.kubernetes.io/component: ibm-festival-demo
-  stage: "test"
+  stage: "int"
 
 patchesJson6902:
 - target:
