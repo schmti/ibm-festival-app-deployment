@@ -1,0 +1,17 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+bases:
+- ../00_base
+
+commonLabels:
+  app: ibm-festival-java-sample
+  app.kubernetes.io/component: ibm-festival-demo
+  stage: "prod"
+
+patchesJson6902:
+- target:
+    group: apps
+    version: v1
+    kind: Deployment
+    name: java-example
+  path: patches/patch-deployment-generated.yaml

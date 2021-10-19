@@ -1,10 +1,5 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
- 
-commonLabels:
-  app: ibm-festival-java-sample
-  app.kubernetes.io/component: ibm-festival-demo
-  app.version: "version-123"
 
 resources:
   - deployment.yaml
