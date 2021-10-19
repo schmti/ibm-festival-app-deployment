@@ -12,12 +12,12 @@ resources:
   - route.yaml
   - hpa.yaml
 
-configMapGenerator:
-- name: my-config
-  files:
-  - config/config.conf
-generatorOptions:
-  disableNameSuffixHash: true
+#configMapGenerator:
+#- name: my-config
+#  files:
+#  - config/config.conf
+#generatorOptions:
+#  disableNameSuffixHash: true
 
 
  
