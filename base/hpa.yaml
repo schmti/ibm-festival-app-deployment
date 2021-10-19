@@ -1,0 +1,16 @@
+apiVersion: autoscaling/v2beta2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: java-example-hpa
+spec:
+  scaleTargetRef:
+    kind: Deployment
+    name: java-example
+    apiVersion: apps/v1
+  minReplicas: 2
+  maxReplicas: 4
+  behavior:
+    scaleUp: 
+      stabilizationWindowSeconds: 120
+    scaleDown: 
+      stabilizationWindowSeconds: 300 
