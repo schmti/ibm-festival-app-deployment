@@ -1,4 +1,4 @@
 # This file will be edited by the build-pipeline. DO NOT TOUCH!
 - op: add
   path: "/spec/template/spec/containers/0/image"
-  value: "MyFreakiongImageUrl22"
+  value: "quay.io/schmti/ibm-festival-java-app-release:feature-test"
