@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
   name: our-first-appset
-  namespace: gec-gitops
+  namespace: openshift-gitops
 spec:
   generators:
   - clusters: {} # This is a generator, specifically, a cluster generator.
@@ -18,4 +18,4 @@ spec:
         path: 20_test
       destination:
         server: '{{server}}'
-        namespace: gec-gitops
+        namespace: test-app-deployment
